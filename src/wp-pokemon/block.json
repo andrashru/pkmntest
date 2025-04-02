@@ -9,8 +9,41 @@
 	"description": "Pokemon Block Description",
 	"example": {},
 	"supports": {
-		"html": false,
-		"color": true
+		"html": false
+	},
+	"attributes": {
+		"selectedType": {
+			"type": "string",
+			"default": ""
+		},
+		"pokemons": {
+			"type": "array",
+			"default": []
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"fontSize": {
+			"type": "number",
+			"default": 16
+		},
+		"itemBackground": {
+			"type": "string",
+			"default": "#f5f5f5"
+		},
+		"itemTextColor": {
+			"type": "string",
+			"default": "#333333"
+		},
+		"customClassName": {
+			"type": "string",
+			"default": ""
+		}
 	},
 	"textdomain": "wp-pokemon",
 	"editorScript": "file:./index.js",

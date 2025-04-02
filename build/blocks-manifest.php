@@ -14,8 +14,43 @@ return array(
 			
 		),
 		'supports' => array(
-			'html' => false,
-			'color' => true
+			'html' => false
+		),
+		'attributes' => array(
+			'selectedType' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'pokemons' => array(
+				'type' => 'array',
+				'default' => array(
+					
+				)
+			),
+			'backgroundColor' => array(
+				'type' => 'string',
+				'default' => '#ffffff'
+			),
+			'textColor' => array(
+				'type' => 'string',
+				'default' => '#000000'
+			),
+			'fontSize' => array(
+				'type' => 'number',
+				'default' => 16
+			),
+			'itemBackground' => array(
+				'type' => 'string',
+				'default' => '#f5f5f5'
+			),
+			'itemTextColor' => array(
+				'type' => 'string',
+				'default' => '#333333'
+			),
+			'customClassName' => array(
+				'type' => 'string',
+				'default' => ''
+			)
 		),
 		'textdomain' => 'wp-pokemon',
 		'editorScript' => 'file:./index.js',

@@ -1,9 +1,47 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
+.pokemon-block {
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	transition: all 0.3s ease;
 
-.wp-block-pokemon-type-wp-pokemon {
-	border: 1px dotted #f00;
+	.pokemon-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 15px;
+		margin-top: 20px;
+	}
+
+	.pokemon-item {
+		border-radius: 8px;
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		transition: transform 0.2s ease;
+
+		&:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+		}
+	}
+
+	.pokemon-content {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		width: 100%;
+	}
+
+	.pokemon-name {
+		font-weight: 500;
+		flex-grow: 1;
+	}
+
+	.pokemon-empty {
+		padding: 20px;
+		text-align: center;
+		background: rgba(0,0,0,0.05);
+		border-radius: 4px;
+		font-style: italic;
+	}
 }
